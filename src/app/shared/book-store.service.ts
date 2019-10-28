@@ -3,7 +3,7 @@ import { Book } from './book';
 
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument} from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +27,13 @@ export class BookStoreService {
    getAll(): Observable<Book[]> {
      return this.items = this.itemsCollection.valueChanges();
    }
+
+
+//   getSingle(isbn: string): Observable<Book> {
+//    return this.items .get<any>(
+//      `${this.api}/book/${isbn}`
+//    );
+//   }
 
 }
 

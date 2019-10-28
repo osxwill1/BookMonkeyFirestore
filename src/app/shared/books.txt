@@ -2,7 +2,7 @@ this.books = [
       {
         isbn: '9783864906466',
         title: 'Angular',
-        authors: ['Ferdinand Malcher', 'Johanney Hoppe', 'Danny Koppenhagen'],
+        authors: ['Ferdinand Malcher', 'Johannes Hoppe', 'Danny Koppenhagen'],
         published: new Date(2019, 4, 30),
         subtitle: 'Grundlagen, fortgeschrittene Themen und Best Practices - mit NativeScript und NgRx',
         rating: 5,
